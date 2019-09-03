@@ -2,7 +2,7 @@ $>vol.py -f ctf/ch2.dmp imageinfo
 
 INFO    : volatility.debug    : Determining profile based on KDBG search...
 
-          Suggested Profile(s) : Win7SP1x86_23418, Win7SP0x86, Win7SP1x86_24000, Win7SP1x86
+          Suggested Profile(s) : Win7SP1x86_23418, Win7SP0x86, Win7SP1x86_24000, **Win7SP1x86**
                      AS Layer1 : IA32PagedMemoryPae (Kernel AS)
                      AS Layer2 : FileAddressSpace (/home/stv/volatility/ctf/ch2.dmp)
                       PAE type : PAE
@@ -27,7 +27,7 @@ $>vol.py -f ctf/ch2.dmp --profile=Win7SP1x86 hivelist
 0x9aba79d0 0x11a259d0 \??\C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT
 0x9abb1720 0x0a7d4720 \??\C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT
 0x8b20c008 0x039e1008 [no name]
-0x8b21c008 0x039ef008 \REGISTRY\MACHINE\SYSTEM
+**0x8b21c008** 0x039ef008 \REGISTRY\MACHINE\SYSTEM
 0x8b23c008 0x02ccf008 \REGISTRY\MACHINE\HARDWARE
 0x8ee66008 0x141c0008 \Device\HarddiskVolume1\Boot\BCD
 
