@@ -1,4 +1,4 @@
-$>vol.py -f ctf/ch2.dmp imageinfo
+$>`vol.py -f ctf/ch2.dmp imageinfo`
 
 INFO    : volatility.debug    : Determining profile based on KDBG search...
 
@@ -16,7 +16,7 @@ INFO    : volatility.debug    : Determining profile based on KDBG search...
      Image local date and time : 2013-01-12 17:59:18 +0100
 
 
-$>vol.py -f ctf/ch2.dmp --profile=Win7SP1x86 hivelist
+$>`vol.py -f ctf/ch2.dmp --profile=Win7SP1x86 hivelist`
 
 0x8ee66740 0x141c0740 \SystemRoot\System32\Config\SOFTWARE
 0x90cab9d0 0x172ab9d0 \SystemRoot\System32\Config\DEFAULT
@@ -32,7 +32,7 @@ $>vol.py -f ctf/ch2.dmp --profile=Win7SP1x86 hivelist
 0x8ee66008 0x141c0008 \Device\HarddiskVolume1\Boot\BCD
 
 
-$>vol.py -f ctf/ch2.dmp --profile=Win7SP1x86 printkey -o 0x8b21c008 -K 'ControlSet001\Control\ComputerName\ComputerName'
+$>`vol.py -f ctf/ch2.dmp --profile=Win7SP1x86 printkey -o 0x8b21c008 -K 'ControlSet001\Control\ComputerName\ComputerName'`
 
 Legend: (S) = Stable   (V) = Volatile
 
